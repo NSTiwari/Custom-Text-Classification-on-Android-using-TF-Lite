@@ -28,7 +28,7 @@ import org.tensorflow.lite.task.text.nlclassifier.NLClassifier;
 /** Load TfLite model and provide predictions with task api. */
 public class TextClassificationClient {
   private static final String TAG = "TaskApi";
-  private static final String MODEL_PATH = "offensive.tflite";
+  private static final String MODEL_PATH = "<your_model.tflite>";
 
   private final Context context;
 
