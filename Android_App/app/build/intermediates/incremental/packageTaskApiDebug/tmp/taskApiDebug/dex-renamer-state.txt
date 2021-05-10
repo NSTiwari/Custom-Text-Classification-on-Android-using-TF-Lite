@@ -1,0 +1,10 @@
+#Sun May 09 18:01:53 IST 2021
+path.2=classes_0.dex
+path.1=classes.dex
+path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.2=D\:\\examples\\lite\\examples\\text_classification\\android\\app\\build\\intermediates\\dex\\taskApiDebug\\mergeLibDexTaskApiDebug\\classes_0.dex
+base.1=D\:\\examples\\lite\\examples\\text_classification\\android\\app\\build\\intermediates\\dex\\taskApiDebug\\mergeProjectDexTaskApiDebug\\classes.dex
+base.0=D\:\\examples\\lite\\examples\\text_classification\\android\\app\\build\\intermediates\\dex\\taskApiDebug\\mergeExtDexTaskApiDebug\\classes.dex

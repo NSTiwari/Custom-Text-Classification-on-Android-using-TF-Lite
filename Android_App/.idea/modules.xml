@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TFLite_Text_Classification_Demo_App.iml" filepath="$PROJECT_DIR$/.idea/modules/TFLite_Text_Classification_Demo_App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TFLite_Text_Classification_Demo_App.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TFLite_Text_Classification_Demo_App.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib_interpreter/TFLite_Text_Classification_Demo_App.lib_interpreter.iml" filepath="$PROJECT_DIR$/.idea/modules/lib_interpreter/TFLite_Text_Classification_Demo_App.lib_interpreter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib_task_api/TFLite_Text_Classification_Demo_App.lib_task_api.iml" filepath="$PROJECT_DIR$/.idea/modules/lib_task_api/TFLite_Text_Classification_Demo_App.lib_task_api.iml" />
+    </modules>
+  </component>
+</project>

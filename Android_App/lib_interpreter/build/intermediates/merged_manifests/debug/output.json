@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "applicationId": "org.tensorflow.lite.examples.textclassification.client",
+  "variantType": "LIBRARY",
+  "elements": [
+    {
+      "outputType": {
+        "type": "MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 1,
+        "versionName": "1.0",
+        "outputFile": "lib_interpreter-debug.aar",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "../../library_manifest/debug/AndroidManifest.xml",
+      "properties": {
+        "packageId": "org.tensorflow.lite.examples.textclassification.client",
+        "split": ""
+      }
+    }
+  ]
+}

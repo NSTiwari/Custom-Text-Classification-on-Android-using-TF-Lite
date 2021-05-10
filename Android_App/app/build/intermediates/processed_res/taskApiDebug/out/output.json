@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "org.tensorflow.lite.examples.textclassification",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "PROCESSED_RES"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 1,
+        "versionName": "1.0",
+        "outputFile": "app-taskApi-debug.apk",
+        "fullName": "taskApiDebug",
+        "baseName": "taskApi-debug",
+        "dirName": ""
+      },
+      "path": "resources-taskApiDebug.ap_",
+      "properties": {
+        "packageId": "org.tensorflow.lite.examples.textclassification",
+        "split": "",
+        "minSdkVersion": "21"
+      }
+    }
+  ]
+}

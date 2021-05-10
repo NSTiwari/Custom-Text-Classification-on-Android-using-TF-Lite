@@ -1,0 +1,6 @@
+org/tensorflow/lite/examples/textclassification/client/Result.java
+ org.tensorflow.lite.examples.textclassification.client.Result
+org/tensorflow/lite/examples/textclassification/client/BuildConfig.java
+ org.tensorflow.lite.examples.textclassification.client.BuildConfig
+org/tensorflow/lite/examples/textclassification/client/TextClassificationClient.java
+ org.tensorflow.lite.examples.textclassification.client.TextClassificationClient

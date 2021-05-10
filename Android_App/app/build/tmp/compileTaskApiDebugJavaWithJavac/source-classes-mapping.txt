@@ -1,0 +1,4 @@
+org/tensorflow/lite/examples/textclassification/BuildConfig.java
+ org.tensorflow.lite.examples.textclassification.BuildConfig
+org/tensorflow/lite/examples/textclassification/MainActivity.java
+ org.tensorflow.lite.examples.textclassification.MainActivity
