@@ -13,6 +13,6 @@ Create your own custom text classifier model and deploy it on an Android app usi
 
 ## Output:
 
-![GitHub Logo](/images/Output.gif)
+![GitHub Logo](Output.gif)
 
 
