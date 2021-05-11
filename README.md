@@ -17,6 +17,8 @@ Create your own custom text classifier model and deploy it on an Android app usi
 
 7. Build the project and install it on your phone. Enjoy your own custom-build text classifier app.
 
+**Note:** To build your custom dataset, refer the [`train.csv`](https://github.com/NSTiwari/Custom-Text-Classification-on-Android-using-TF-Lite/blob/master/train.csv) file for the format.
+
 ## Output:
 
 ![GitHub Logo](Output.gif)
