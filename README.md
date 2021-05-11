@@ -5,7 +5,7 @@ Create your own custom text classifier model and deploy it on an Android app usi
 
 1. Clone the repository on your local machine.
  
-2. Sign in to your Google account and upload the `Custom_Object_Text_Classification.ipynb` notebook on Colab.
+2. Sign in to your Google account and upload the `Custom_Text_Classification.ipynb` notebook on Colab.
 
 3. Run the notebook cells one-by-one by following the instructions.
 
