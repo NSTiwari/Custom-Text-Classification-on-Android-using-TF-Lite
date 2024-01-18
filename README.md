@@ -23,4 +23,6 @@ Create your own custom text classifier model and deploy it on an Android app usi
 
 ![GitHub Logo](Output.gif)
 
+- Read the [Medium blog](https://medium.com/tfug-mumbai-weekly/custom-text-classification-on-android-using-tensorflow-lite-4fcbf132c10b) for step-by-step implementation.
+
 
