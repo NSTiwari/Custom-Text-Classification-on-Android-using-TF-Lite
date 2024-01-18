@@ -1,7 +1,7 @@
 # Custom Text Classification on Android using TensorFlow Lite
 Create your own custom text classifier model and deploy it on an Android app using TensorFlow Lite.
 
-**Note:** TF Lite Model Maker is now obsolete and is replaced by [MediaPipe Model Maker]
+**Note:** [TF Lite Model Maker](https://www.tensorflow.org/lite/models/modify/model_maker) is now obsolete and is replaced by [MediaPipe Model Maker](https://developers.google.com/mediapipe/solutions/model_maker).
 
 ## Steps:
 
