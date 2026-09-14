@@ -1,15 +1,19 @@
 package org.tensorflow.lite.examples.textclassification;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -69,6 +73,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_history) {
+            startActivity(new Intent(this, HistoryActivity.class));
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
     protected void onStart() {
         super.onStart();
         Log.v(TAG, "onStart");
@@ -90,6 +109,10 @@ public class MainActivity extends AppCompatActivity {
 
     /** Send input text to TextClassificationClient and get the classify messages. */
     private void classify(final String text) {
+        if (isBlank(text)) {
+            Toast.makeText(this, "Enter some text to classify.", Toast.LENGTH_SHORT).show();
+            return;
+        }
         handler.post(
                 () -> {
                     // Run text classification with TF Lite.
@@ -98,6 +121,11 @@ public class MainActivity extends AppCompatActivity {
                     // Show classification result on screen
                     showResult(text, results);
                 });
+    }
+
+    /** True when text is null, empty, or only whitespace. */
+    static boolean isBlank(String text) {
+        return text == null || text.trim().isEmpty();
     }
 
 
@@ -166,6 +194,8 @@ public class MainActivity extends AppCompatActivity {
                         probability.add(result.getConfidence());  // Extract confidence
                     }
 
+                    saveTopResultToHistory(inputText, results);
+
 
                     mBarChart = findViewById(R.id.chart);
                     mBarChart.setDrawBarShadow(false);
@@ -220,5 +250,23 @@ public class MainActivity extends AppCompatActivity {
                     inputEditText.getText().clear();
 
                 });
+    }
+
+    /**
+     * Saves the top-confidence result to the on-device classification log
+     * (viewable from the overflow menu), so past runs aren't lost the
+     * moment a new one is made. Results are already sorted by descending
+     * confidence by {@link TextClassificationClient#classify}.
+     */
+    private void saveTopResultToHistory(String inputText, List<Result> results) {
+        if (results.isEmpty() || inputText == null || inputText.trim().isEmpty()) {
+            return;
+        }
+        Result top = results.get(0);
+        HistoryEntry entry = new HistoryEntry(inputText, top.getTitle(), top.getConfidence(), System.currentTimeMillis());
+
+        ClassificationHistoryStore store = HistoryActivity.loadStore(getApplicationContext());
+        store.add(entry);
+        HistoryActivity.saveStore(getApplicationContext(), store);
     }
 }

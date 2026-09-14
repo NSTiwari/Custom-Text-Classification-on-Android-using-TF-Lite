@@ -19,6 +19,8 @@ Create your own custom text classifier model and deploy it on an Android app usi
 
 7. Build the project and install it on your phone. Enjoy your own custom-build text classifier app.
 
+The app keeps a log of past classifications, viewable from the overflow menu. From there you can filter by minimum confidence, search by text or label, sort by confidence, share a single result, or export the whole filtered list.
+
 **Note:** To build your custom dataset, refer the [`train.csv`](https://github.com/NSTiwari/Custom-Text-Classification-on-Android-using-TF-Lite/blob/master/train.csv) file for the format.
 
 ## Output:
